@@ -13,3 +13,10 @@ nlp:
   intentNoMatchThresholds:
     phrases: 0.2
     patterns: 0.2
+
+injector:
+  defaultLanguage: ru
+  unknownLanguageMessage: Извините, этот язык не поддерживается.
+  bots:
+    ru: ""
+    en: ""

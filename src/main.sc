@@ -1,3 +1,16 @@
+require: router.js
+
+init:
+    bind("preMatch", processRequest);
+    bind("postProcess", processRequest, "/Redirect");
+
+theme: /
+
+    state: Request
+        q!: *
+
+    state: Redirect
+
 require: slotfilling/slotFilling.sc
   module = sys.zb-common
 theme: /
